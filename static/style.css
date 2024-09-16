@@ -1,0 +1,105 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for centering */
+.container {
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+}
+
+/* Form styling */
+form {
+    text-align: center;
+    margin: 20px 0;
+}
+
+input[type="text"] {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #ee5253;
+}
+
+/* Weather display styling */
+.weather {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.weather .left, .weather .right {
+    width: 45%;
+    text-align: center;
+}
+
+.weather .left h2 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.weather .left h3 {
+    font-size: 1.8rem;
+    color: #ff6b6b;
+}
+
+.weather .right .icon img {
+    max-width: 100px;
+}
+
+.weather .right .condition {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.weather .right .condition p {
+    margin: 0;
+    padding: 5px;
+    color: black;
+}
+
+/* Description and day styling */
+p {
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .weather {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .weather .left, .weather .right {
+        width: 100%;
+    }
+}
